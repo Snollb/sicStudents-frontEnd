@@ -16,7 +16,7 @@ async function getPerson(name, birthDate) {
         method: 'POST',
         headers: {
             'Accept': 'application/json',
-            'Content-Type': 'application/json'
+            'Content-Type': 'application/json; chaset=UTF-8'
         },
         body: JSON.stringify({
             "name": name,
@@ -24,20 +24,20 @@ async function getPerson(name, birthDate) {
         })
     })
     .then(response => response.json())
-    .then(result => setResult(result))
+    .then(result => teste.textContent = result)
     .catch(err => console.log(err))
 
-    const retorno = await response.json();
+/*     const retorno = await response.json();
 
-    setResult(retorno)
+    setResult(retorno) */
     
 }
 
-function setResult(result) {
+/* function setResult(result) {
     const campoResult = document.querySelector(".result");
 
     campoResult.innerHTML = result.room
-}
+} */
 
 
 /* 
