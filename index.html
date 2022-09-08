@@ -1,20 +1,41 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="./css/styles.css" rel="stylesheet" />
-    <title>Students</title>
-</head>
-<body>
-    <form class="form" action="">
-        <p>Nome Completo</p><input type="text" class="student-name"><br><br>
-        <p>Data de Nascimento - Padrão dd/mm/AAAA</p><input type="text" class="birthDate"><br><br>
-        <button>Pesquisar</button>
-    </form>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="./css/styles.css" rel="stylesheet" />
+        <title>Students</title>
+    </head>
+    <body>
 
-    <div class="result" id="teste"></div>
-    <script src="js/scripts.js"></script>
-</body>
+        <header class="cabecalho">
+            <div class="cabecalho-div">
+                <img class="cabecalho-imagem" src="./assets/CSA_Geral_vertical_emcores.png" alt="Logo do Colégio Santo Agostinho">
+            </div>
+        </header>
+
+        <main class="conteudo">
+            <div class="conteudo-div">
+
+                <h1 class="conteudo-div-h1">Descubra a turma</h1>
+
+                <form action="" class="conteudo-form">
+                    <label for="studentName">Nome Completo<span style="color:#fa3232">*</span>:</label>
+                        <input type="text" class="studentName" placeholder="Digite um nome">
+                    <label id="space" for="birthDate">Data de Nascimento<span  style="color:#fa3232">*</span>:</label>
+                        <input type="date" class="birthDate" placeholder="Digite a data de nascimento">
+
+                        <div class="form-button">
+                            <button class="conteudo-form-button">Pesquisar</button>
+                        </div>
+
+                </form>
+
+                <h1 id="resultado"></h1>
+            </div>
+        </main>
+
+        <script src="js/scripts.js"></script>
+    </body>
 </html>

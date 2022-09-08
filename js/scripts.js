@@ -1,10 +1,10 @@
-const form = document.querySelector('.form')
+const form = document.querySelector('.conteudo-form')
 const url = "https://sicstudents.herokuapp.com/person";
 
 form.addEventListener('submit', function (e) {
     e.preventDefault();
 
-    const inputName = e.target.querySelector('.student-name');
+    const inputName = e.target.querySelector('.studentName');
     const inputBirthDate = e.target.querySelector('.birthDate');
 
     getPerson(inputName.value, inputBirthDate.value)
@@ -24,7 +24,9 @@ async function getPerson(name, birthDate) {
         })
     })
     .then(response => response.json())
-    .then(result => teste.textContent = result)
+    .then(result => {
+        resultado.textContent = result;
+    } )
     .catch(err => console.log(err))
 
 /*     const retorno = await response.json();

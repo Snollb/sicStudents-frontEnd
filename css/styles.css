@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Righteous&family=Sarala:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+body {
+    font-size: 100%;
+}
+
+.cabecalho {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 24px 0px 24px 0px;
+}
+
+.cabecalho-div {
+    display: flex;
+    width: 80%;
+}
+
+.cabecalho-imagem {
+    height: 90px;
+}
+
+.conteudo {
+    border-top: 0.4px solid #3e3d3d;
+    display: flex;
+    justify-content: center;
+}
+
+.conteudo-div {
+    display: flex;
+    margin-top: 4%;
+    border: #3e3d3d 0.4px solid;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 70%;
+    border-radius: 10px;
+}
+
+.conteudo-div-h1 {
+    padding-top: 15px;
+    color: #3e3d3d;
+}
+
+.conteudo-form {
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+
+label {
+    padding-left: 2px;
+}
+
+#space {
+    padding-top: 15px;
+}
+
+input {
+    height: 35px;
+    padding: 10px;
+    border-radius: 6px;
+    border: 0.4px solid;
+    background-color: #e0e0e0;
+}
+
+input:hover {
+    background-color: #bcbcbc;
+}
+
+label {
+    color: #3e3d3d;
+}
+
+.form-button {
+    display: flex;
+    justify-content: center;
+}
+
+button {
+    margin-top: 15px;
+    width: 90px;
+    height: 30px;
+    border-radius: 6px;
+    border: 0.3px solid #003e67;
+    background-color: #003e67;
+    color: #FFF;
+}
+
+button:hover {
+    background-color: #a43633;
+    border: 0.3px solid #a43633;
+}
+
+#resultado {
+    margin-bottom: 40px;
+    padding: 10px;
+    font-size: 20px;
+}
+
+
+
