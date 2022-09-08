@@ -90,7 +90,7 @@ label {
 button {
     margin-top: 15px;
     width: 90px;
-    height: 30px;
+    height: 35px;
     border-radius: 6px;
     border: 0.3px solid #003e67;
     background-color: #003e67;
@@ -108,5 +108,18 @@ button:hover {
     font-size: 20px;
 }
 
+@media (max-width: 600px) {
+    .cabecalho-div {
+        justify-content: center;
+    }
 
+    .conteudo-div {
+        width: 90%;
+    }
+
+    .conteudo-form {
+        width: 90%;
+    }
+
+}
 
