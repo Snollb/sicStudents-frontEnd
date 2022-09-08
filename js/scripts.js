@@ -6,6 +6,7 @@ form.addEventListener('submit', function (e) {
 
     const inputName = e.target.querySelector('.studentName');
     const inputBirthDate = e.target.querySelector('.birthDate');
+    resultado.textContent = "Por favor aguarde"
 
     getPerson(inputName.value, inputBirthDate.value)
 })
@@ -27,7 +28,9 @@ async function getPerson(name, birthDate) {
     .then(result => {
         resultado.textContent = result;
     } )
-    .catch(err => console.log(err))
+    .catch(err => {
+        resultado.textContent = "Erro: por favor entre em contato com o administrador"
+        console.log(err)})
 
 /*     const retorno = await response.json();
 
