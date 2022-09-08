@@ -6,7 +6,7 @@ form.addEventListener('submit', function (e) {
 
     const inputName = e.target.querySelector('.studentName');
     const inputBirthDate = e.target.querySelector('.birthDate');
-    resultado.textContent = "Por favor aguarde"
+    resultado.textContent = "Por favor aguarde..."
 
     getPerson(inputName.value, inputBirthDate.value)
 })
@@ -26,6 +26,7 @@ async function getPerson(name, birthDate) {
     })
     .then(response => response.json())
     .then(result => {
+        console.log(result)
         resultado.textContent = result;
     } )
     .catch(err => {
